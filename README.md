@@ -64,7 +64,7 @@ This repository holds Monister together with the framework it runs on and earlie
 | [`deepagents_cli/`](deepagents_cli) | Agent runtime: model setup, middleware (files, memory, skills, shell), HITL, sandboxes, Textual TUI | Core dependency |
 | `runv1.py`, `simple_runner.py` | Terminal runners for the deepagents agent | Experimental |
 | `streamlit_app.py` | Streamlit prototype: chat with a preview column | Prototype |
-| `monister/backend/`, `frontend/` | Early "DocAgent Web Platform" skeleton (FastAPI + Vite) | Superseded by `monister/` |
+| `backend/`, `frontend/` | Early "DocAgent Web Platform" skeleton (FastAPI + Vite) | Superseded by `monister/` |
 | `tegma/` | Archive of earlier versions and test scripts (Excel cleaning, charts, PPTX) | Archive |
 | `next_task.md` | Planned agent tools (see [Roadmap](#-roadmap)) | Planning |
 
