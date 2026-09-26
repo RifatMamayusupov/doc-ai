@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Oylik Hisoboti</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { text-align: center; color: #2c3e50; }
+        .header-info { margin-bottom: 30px; border-bottom: 2px solid #eee; padding-bottom: 20px; }
+        .header-info p { margin: 5px 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .total-row { font-weight: bold; background-color: #e8f4f8; }
+        .footer { margin-top: 50px; display: flex; justify-content: space-between; }
+        .signature-line { border-top: 1px solid #000; width: 200px; margin-top: 40px; text-align: center; padding-top: 5px; }
+    </style>
+</head>
+<body>
+    <h1>BANK OYLIK HISOBOTI</h1>
+    
+    <div class="header-info">
+        <p><strong>Bank Nomi:</strong> {{ bank_nomi }}</p>
+        <p><strong>Mijoz (Tashkilot) Nomi:</strong> {{ tashkilot_nomi }}</p>
+        <p><strong>Hisob Raqami (MFO):</strong> {{ hisob_raqami }}</p>
+        <p><strong>Hisobot Davri:</strong> {{ hisobot_davri }}</p>
+        <p><strong>Boshlang'ich Balans:</strong> {{ boshlangich_balans }} so'm</p>
+    </div>
+
+    <h3>Kirimlar (Daromadlar)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Sana</th>
+                <th>Tavsif</th>
+                <th>Summa (so'm)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for kirim in kirimlar %}
+            <tr>
+                <td>{{ kirim.sana }}</td>
+                <td>{{ kirim.tavsif }}</td>
+                <td>{{ kirim.summa }}</td>
+            </tr>
+            {% endfor %}
+            <tr class="total-row">
+                <td colspan="2">Jami Kirim:</td>
+                <td>{{ jami_kirim }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Chiqimlar (Xarajatlar)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Sana</th>
+                <th>Tavsif</th>
+                <th>Summa (so'm)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for chiqim in chiqimlar %}
+            <tr>
+                <td>{{ chiqim.sana }}</td>
+                <td>{{ chiqim.tavsif }}</td>
+                <td>{{ chiqim.summa }}</td>
+            </tr>
+            {% endfor %}
+            <tr class="total-row">
+                <td colspan="2">Jami Chiqim:</td>
+                <td>{{ jami_chiqim }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin-top: 30px; padding: 15px; background-color: #f9f9f9; border: 1px solid #ddd;">
+        <h3>Yakuniy Natija</h3>
+        <p><strong>Yakuniy Balans:</strong> {{ yakuniy_balans }} so'm</p>
+    </div>
+
+    <div class="footer">
+        <div>
+            <p>Hisobot tayyorladi:</p>
+            <div class="signature-line">{{ masul_shaxs }}</div>
+        </div>
+        <div>
+            <p>Sana:</p>
+            <div class="signature-line">{{ sana }}</div>
+        </div>
+    </div>
+</body>
+</html>

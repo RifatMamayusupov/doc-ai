@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#475569"/>
+    </marker>
+    <marker id="aI" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#6366F1"/>
+    </marker>
+    <marker id="aA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#D97706"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" rx="20" fill="#F8FAFC"/>
+  <text x="40" y="52" font-size="22" font-weight="800" fill="#0F172A">Request lifecycle</text>
+  <text x="40" y="78" font-size="14" fill="#64748B">Every agent step streams to the UI; sensitive actions pause until the user approves.</text>
+
+  <!-- lifelines -->
+  <g font-size="14" font-weight="700" text-anchor="middle">
+    <rect x="70" y="104" width="160" height="44" rx="10" fill="#EEF2FF" stroke="#C7D2FE"/>
+    <text x="150" y="131" fill="#3730A3">User · Browser</text>
+    <rect x="370" y="104" width="160" height="44" rx="10" fill="#ECFEFF" stroke="#A5F3FC"/>
+    <text x="450" y="131" fill="#0E7490">FastAPI · WS</text>
+    <rect x="670" y="104" width="160" height="44" rx="10" fill="#F5F3FF" stroke="#DDD6FE"/>
+    <text x="750" y="131" fill="#6D28D9">Agent · LLM</text>
+    <rect x="970" y="104" width="160" height="44" rx="10" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="1050" y="131" fill="#15803D">Tools · Files</text>
+  </g>
+  <g stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 6">
+    <line x1="150" y1="150" x2="150" y2="530"/>
+    <line x1="450" y1="150" x2="450" y2="530"/>
+    <line x1="750" y1="150" x2="750" y2="530"/>
+    <line x1="1050" y1="150" x2="1050" y2="530"/>
+  </g>
+
+  <g font-size="13" fill="#334155">
+    <!-- 1 -->
+    <line x1="150" y1="184" x2="446" y2="184" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+    <circle cx="170" cy="172" r="10" fill="#0F172A"/><text x="170" y="176.5" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">1</text>
+    <text x="188" y="176">upload file + prompt</text>
+    <!-- 2 -->
+    <line x1="450" y1="222" x2="746" y2="222" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+    <circle cx="470" cy="210" r="10" fill="#0F172A"/><text x="470" y="214.5" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">2</text>
+    <text x="488" y="214">astream_events(message, thread_id)</text>
+    <!-- 3 -->
+    <line x1="750" y1="260" x2="1046" y2="260" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+    <circle cx="770" cy="248" r="10" fill="#0F172A"/><text x="770" y="252.5" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">3</text>
+    <text x="788" y="252">parse_excel · clean_data · …</text>
+    <line x1="1050" y1="292" x2="754" y2="292" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+    <text x="1030" y="284" text-anchor="end" fill="#64748B">result + output file paths</text>
+    <!-- 4 events -->
+    <line x1="750" y1="326" x2="154" y2="326" stroke="#6366F1" stroke-width="2" marker-end="url(#aI)"/>
+    <circle cx="730" cy="314" r="10" fill="#6366F1"/><text x="730" y="318.5" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">4</text>
+    <text x="712" y="318" text-anchor="end" fill="#4338CA">token · tool_start · tool_end · pipeline_update</text>
+  </g>
+
+  <!-- HITL block -->
+  <rect x="56" y="350" width="1100" height="130" rx="14" fill="#FFFBEB" stroke="#FCD34D" stroke-dasharray="6 4"/>
+  <text x="76" y="374" font-size="12" font-weight="800" fill="#B45309" letter-spacing="1.5">HUMAN-IN-THE-LOOP · shell · execute · write_file · edit_file · web_search · fetch_url</text>
+  <g font-size="13" fill="#78350F">
+    <line x1="750" y1="404" x2="154" y2="404" stroke="#D97706" stroke-width="2" marker-end="url(#aA)"/>
+    <circle cx="730" cy="392" r="10" fill="#D97706"/><text x="730" y="396.5" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">5</text>
+    <text x="712" y="396" text-anchor="end">hitl_request { interrupt_id, message }</text>
+    <line x1="150" y1="446" x2="746" y2="446" stroke="#D97706" stroke-width="2" marker-end="url(#aA)"/>
+    <circle cx="170" cy="434" r="10" fill="#D97706"/><text x="170" y="438.5" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">6</text>
+    <text x="188" y="438">approve / reject  →  Command(resume={decisions})</text>
+  </g>
+
+  <!-- 7 -->
+  <g font-size="13" fill="#334155">
+    <line x1="750" y1="510" x2="154" y2="510" stroke="#16A34A" stroke-width="2" marker-end="url(#a)"/>
+    <circle cx="730" cy="498" r="10" fill="#16A34A"/><text x="730" y="502.5" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">7</text>
+    <text x="712" y="502" text-anchor="end" fill="#15803D">complete + file_ready → auto-preview</text>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+# Core
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+aiofiles>=23.2.1
+
+# Database
+sqlalchemy[asyncio]>=2.0.0
+asyncpg>=0.29.0
+alembic>=1.13.0
+
+# Redis
+redis>=5.0.0
+
+# Authentication
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+
+# Validation
+pydantic>=2.6.0
+pydantic-settings>=2.1.0
+
+# Document Processing
+python-docx>=1.1.0
+openpyxl>=3.1.2
+pdfplumber>=0.10.3
+pillow>=10.2.0
+pytesseract>=0.3.10
+
+# DeepAgents# LangChain/LangGraph for agent
+langchain>=0.1.0
+langchain-openai>=0.0.5
+langgraph>=0.0.20
+
+# Background tasks
+arq>=0.25.0
+apscheduler>=3.10.0
+
+# Connector Libraries
+aiohttp>=3.9.0
+aiobotocore>=2.9.0
+azure-storage-blob>=12.19.0
+
+# Advanced Document Processing
+PyMuPDF>=1.23.0
+python-pptx>=0.6.0
+Pygments>=2.17.0
+
+# Utilities
+python-dotenv>=1.0.0
+httpx>=0.26.0
+

@@ -1,0 +1,38 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Node / build output
+node_modules/
+dist/
+.next/
+
+# Databases & runtime state
+*.db
+*.sqlite
+*.sqlite3
+monister/backend/sessions/
+
+# User data
+monister/data/*
+!monister/data/.gitkeep
+monister/uploads/*
+!monister/uploads/.gitkeep
+uploads/*
+!uploads/.gitkeep
+files/
+tegma/files/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

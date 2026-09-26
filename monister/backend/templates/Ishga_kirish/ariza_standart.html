@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Ishga Kirish Arizasi</title>
+    <style>
+        body { font-family: 'Times New Roman', serif; max-width: 800px; margin: 40px auto; line-height: 1.6; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .content { text-align: justify; }
+        .signature { margin-top: 60px; display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>ARIZA</h2>
+    </div>
+    
+    <div class="content">
+        <p><strong>{{tashkilot_nomi}}</strong> direktoriga</p>
+        <p>{{direktor_ismi}}</p>
+        <br>
+        <p>Fuqaro {{ism_sharif}} dan.</p>
+        <br>
+        <p>Hurmatli direktor!</p>
+        <p>
+            Men, {{ism_sharif}}, {{tug_yili}} yilda tug'ilgan, {{pasport_seria}} pasport egasi,
+            {{manzil}} da yashayman.
+        </p>
+        <p>
+            Sizning tashkilotingizda <strong>{{lavozim}}</strong> lavozimida ishlash uchun iltimos qilaman.
+        </p>
+        <p>
+            Ma'lumotim: {{malumot}}<br>
+            Mutaxassislik: {{mutaxassislik}}<br>
+            Ish staji: {{ish_staji}} yil
+        </p>
+        <p>Arizamni ko'rib chiqishingizni so'rayman.</p>
+    </div>
+    
+    <div class="signature">
+        <div>
+            <p>Sana: {{sana}}</p>
+        </div>
+        <div>
+            <p>Imzo: _____________</p>
+            <p>{{ism_sharif}}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+/**
+ * Sync Dashboard Styles
+ */
+
+.sync-dashboard {
+    background: var(--bg-secondary, #1e1e2e);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.sync-dashboard.loading,
+.sync-dashboard.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: var(--text-secondary, #a0a0b0);
+}
+
+.sync-dashboard.empty a {
+    color: var(--accent, #7c3aed);
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+/* Header */
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: var(--bg-tertiary, #252536);
+    border-bottom: 1px solid var(--border, #3a3a4a);
+}
+
+.dashboard-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-primary, #fff);
+}
+
+.job-count {
+    font-size: 12px;
+    color: var(--text-secondary, #a0a0b0);
+    background: var(--bg-primary, #16161e);
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+/* Jobs List */
+.jobs-list {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Job Card */
+.job-card {
+    background: var(--bg-primary, #16161e);
+    border-radius: 10px;
+    padding: 14px;
+    border: 1px solid var(--border, #3a3a4a);
+    transition: all 0.2s;
+}
+
+.job-card:hover {
+    border-color: var(--accent, #7c3aed);
+}
+
+.job-card.running {
+    border-color: var(--accent, #7c3aed);
+    background: rgba(124, 58, 237, 0.05);
+}
+
+.job-card.error {
+    border-color: var(--error, #ef4444);
+    background: rgba(239, 68, 68, 0.05);
+}
+
+/* Job Header */
+.job-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.connector-icon {
+    font-size: 24px;
+}
+
+.connector-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.connector-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary, #fff);
+}
+
+.connector-type {
+    font-size: 11px;
+    color: var(--text-secondary, #a0a0b0);
+}
+
+.status-indicator {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+}
+
+/* Progress Section */
+.progress-section {
+    margin-top: 12px;
+}
+
+.progress-bar {
+    height: 6px;
+    background: var(--bg-tertiary, #252536);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent, #7c3aed), #6366f1);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.progress-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 11px;
+}
+
+.progress-percent {
+    color: var(--accent, #7c3aed);
+    font-weight: 600;
+}
+
+.current-file {
+    color: var(--text-secondary, #a0a0b0);
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Error Message */
+.error-message {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: rgba(239, 68, 68, 0.1);
+    border-radius: 6px;
+    font-size: 12px;
+    color: var(--error, #ef4444);
+}
+
+/* Job Footer */
+.job-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border, #3a3a4a);
+}
+
+.job-stats {
+    display: flex;
+    gap: 12px;
+}
+
+.stat {
+    font-size: 11px;
+    color: var(--text-secondary, #a0a0b0);
+}
+
+.job-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.action-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 6px;
+    background: var(--bg-tertiary, #252536);
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    transform: scale(1.1);
+}
+
+.action-btn.sync:hover {
+    background: var(--accent, #7c3aed);
+}
+
+.action-btn.pause:hover {
+    background: var(--warning, #f59e0b);
+}
+
+.action-btn.resume:hover {
+    background: var(--success, #10b981);
+}
+
+/* Spinner */
+.spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--border, #3a3a4a);
+    border-top-color: var(--accent, #7c3aed);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 12px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

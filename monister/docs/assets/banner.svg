@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#151B3B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#6366F1" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" rx="20" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="20" fill="url(#grid)"/>
+  <rect width="1280" height="360" rx="20" fill="url(#glow)"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(80 92)">
+    <rect width="64" height="64" rx="16" fill="url(#accent)"/>
+    <path d="M16 46V20l16 14 16-14v26" fill="none" stroke="#0B1020" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="164" y="138" font-size="52" font-weight="800" fill="#F8FAFC" letter-spacing="-1">Monister</text>
+  <text x="80" y="206" font-size="26" font-weight="600" fill="url(#accent)">Agentic AI workspace for documents &amp; data</text>
+  <text x="80" y="246" font-size="18" fill="#94A3B8">Upload files · ask in plain language · get cleaned data, charts, reports and</text>
+  <text x="80" y="272" font-size="18" fill="#94A3B8">filled templates — with a human approving every sensitive step.</text>
+
+  <!-- Tech chips -->
+  <g font-size="13" font-weight="600" fill="#CBD5E1">
+    <rect x="80" y="296" width="92" height="28" rx="14" fill="#1E2548" stroke="#334155"/>
+    <text x="126" y="315" text-anchor="middle">FastAPI</text>
+    <rect x="182" y="296" width="96" height="28" rx="14" fill="#1E2548" stroke="#334155"/>
+    <text x="230" y="315" text-anchor="middle">React 19</text>
+    <rect x="288" y="296" width="104" height="28" rx="14" fill="#1E2548" stroke="#334155"/>
+    <text x="340" y="315" text-anchor="middle">LangGraph</text>
+    <rect x="402" y="296" width="112" height="28" rx="14" fill="#1E2548" stroke="#334155"/>
+    <text x="458" y="315" text-anchor="middle">deepagents</text>
+    <rect x="524" y="296" width="96" height="28" rx="14" fill="#1E2548" stroke="#334155"/>
+    <text x="572" y="315" text-anchor="middle">Gemini</text>
+  </g>
+
+  <!-- Illustration: document -> agent -> outputs -->
+  <g transform="translate(820 70)">
+    <!-- input doc -->
+    <g>
+      <rect x="0" y="60" width="104" height="132" rx="12" fill="#1E2548" stroke="#475569"/>
+      <rect x="16" y="82" width="56" height="8" rx="4" fill="#64748B"/>
+      <rect x="16" y="100" width="72" height="6" rx="3" fill="#334155"/>
+      <rect x="16" y="114" width="64" height="6" rx="3" fill="#334155"/>
+      <rect x="16" y="128" width="72" height="6" rx="3" fill="#334155"/>
+      <rect x="16" y="150" width="30" height="22" rx="4" fill="#14B8A6" fill-opacity="0.25" stroke="#2DD4BF"/>
+      <text x="31" y="166" font-size="11" font-weight="700" fill="#5EEAD4" text-anchor="middle">XLS</text>
+      <rect x="54" y="150" width="34" height="22" rx="4" fill="#F43F5E" fill-opacity="0.2" stroke="#FB7185"/>
+      <text x="71" y="166" font-size="11" font-weight="700" fill="#FDA4AF" text-anchor="middle">PDF</text>
+    </g>
+    <path d="M112 126h40" stroke="#818CF8" stroke-width="2.5" stroke-dasharray="5 5"/>
+    <path d="M148 120l8 6-8 6" fill="none" stroke="#818CF8" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- agent core -->
+    <circle cx="210" cy="126" r="50" fill="#6366F1" fill-opacity="0.15" stroke="#818CF8" stroke-width="2"/>
+    <circle cx="210" cy="126" r="32" fill="url(#accent)"/>
+    <path d="M198 136v-20l12 10 12-10v20" fill="none" stroke="#0B1020" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="210" y="198" font-size="12" font-weight="700" fill="#A5B4FC" text-anchor="middle" letter-spacing="1.5">AGENT</text>
+    <path d="M264 126h40" stroke="#2DD4BF" stroke-width="2.5" stroke-dasharray="5 5"/>
+    <path d="M300 120l8 6-8 6" fill="none" stroke="#2DD4BF" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- outputs -->
+    <g transform="translate(316 20)">
+      <rect width="100" height="66" rx="10" fill="#1E2548" stroke="#475569"/>
+      <rect x="16" y="38" width="12" height="16" rx="2" fill="#818CF8"/>
+      <rect x="34" y="26" width="12" height="28" rx="2" fill="#A5B4FC"/>
+      <rect x="52" y="18" width="12" height="36" rx="2" fill="#2DD4BF"/>
+      <rect x="70" y="32" width="12" height="22" rx="2" fill="#5EEAD4"/>
+    </g>
+    <g transform="translate(316 96)">
+      <rect width="100" height="60" rx="10" fill="#1E2548" stroke="#475569"/>
+      <rect x="14" y="14" width="72" height="6" rx="3" fill="#64748B"/>
+      <rect x="14" y="28" width="60" height="6" rx="3" fill="#334155"/>
+      <rect x="14" y="42" width="40" height="6" rx="3" fill="#334155"/>
+      <circle cx="78" cy="44" r="8" fill="#22C55E" fill-opacity="0.25" stroke="#4ADE80"/>
+      <path d="M74 44l3 3 5-6" fill="none" stroke="#4ADE80" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(316 166)">
+      <rect width="100" height="60" rx="10" fill="#1E2548" stroke="#475569"/>
+      <circle cx="30" cy="30" r="16" fill="#0EA5E9" fill-opacity="0.2" stroke="#38BDF8"/>
+      <path d="M22 30l14-7-4 16-4-6z" fill="#7DD3FC"/>
+      <rect x="54" y="22" width="34" height="6" rx="3" fill="#64748B"/>
+      <rect x="54" y="34" width="26" height="6" rx="3" fill="#334155"/>
+    </g>
+  </g>
+</svg>

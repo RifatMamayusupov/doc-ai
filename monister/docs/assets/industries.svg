@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="414" viewBox="0 0 1200 414" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1200" height="414" rx="20" fill="#F8FAFC"/>
+  <text x="40" y="52" font-size="22" font-weight="800" fill="#0F172A">10 industry modules</text>
+  <text x="40" y="78" font-size="14" fill="#64748B">Each module ships document types, required fields, compliance rules and Uzbek terminology.</text>
+
+  <g font-size="15" font-weight="700" fill="#0F172A">
+    <!-- row 1 -->
+    <g transform="translate(40 104)">
+      <rect width="208" height="136" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="18" y="18" width="36" height="36" rx="10" fill="#FEE2E2"/>
+      <path d="M36 26v20M26 36h20" stroke="#DC2626" stroke-width="4" stroke-linecap="round"/>
+      <text x="18" y="82">Healthcare</text>
+      <text x="18" y="102" font-size="13" font-weight="500" fill="#64748B">Tibbiyot</text>
+      <text x="18" y="122" font-size="11" font-weight="500" fill="#94A3B8">sick leave · prescription</text>
+    </g>
+    <g transform="translate(270 104)">
+      <rect width="208" height="136" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="18" y="18" width="36" height="36" rx="10" fill="#DBEAFE"/>
+      <path d="M24 34l12-6 12 6-12 6z M29 37v6c4 3 10 3 14 0v-6" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linejoin="round"/>
+      <text x="18" y="82">Education</text>
+      <text x="18" y="102" font-size="13" font-weight="500" fill="#64748B">Ta'lim</text>
+      <text x="18" y="122" font-size="11" font-weight="500" fill="#94A3B8">transcript · scholarship</text>
+    </g>
+    <g transform="translate(500 104)">
+      <rect width="208" height="136" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="18" y="18" width="36" height="36" rx="10" fill="#EDE9FE"/>
+      <path d="M36 25v22M28 47h16M26 31h20M26 31l-4 8h8zM46 31l-4 8h8z" fill="none" stroke="#7C3AED" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+      <text x="18" y="82">Legal</text>
+      <text x="18" y="102" font-size="13" font-weight="500" fill="#64748B">Huquq</text>
+      <text x="18" y="122" font-size="11" font-weight="500" fill="#94A3B8">NDA · power of attorney</text>
+    </g>
+    <g transform="translate(730 104)">
+      <rect width="208" height="136" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="18" y="18" width="36" height="36" rx="10" fill="#DCFCE7"/>
+      <path d="M26 44l7-8 5 5 8-10" fill="none" stroke="#16A34A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="18" y="82">Finance &amp; Banking</text>
+      <text x="18" y="102" font-size="13" font-weight="500" fill="#64748B">Moliya va Bank</text>
+      <text x="18" y="122" font-size="11" font-weight="500" fill="#94A3B8">invoice · loan application</text>
+    </g>
+    <g transform="translate(960 104)">
+      <rect width="200" height="136" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="18" y="18" width="36" height="36" rx="10" fill="#E0F2FE"/>
+      <path d="M24 46h24M27 46V34M33 46V34M39 46V34M45 46V34M24 32l12-7 12 7z" fill="none" stroke="#0284C7" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+      <text x="18" y="82">Government</text>
+      <text x="18" y="102" font-size="13" font-weight="500" fill="#64748B">Davlat</text>
+      <text x="18" y="122" font-size="11" font-weight="500" fill="#94A3B8">permits · citizen appeals</text>
+    </g>
+    <!-- row 2 -->
+    <g transform="translate(40 254)">
+      <rect width="208" height="136" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="18" y="18" width="36" height="36" rx="10" fill="#FCE7F3"/>
+      <circle cx="36" cy="31" r="5" fill="none" stroke="#DB2777" stroke-width="2.5"/>
+      <path d="M27 46c1-6 5-8 9-8s8 2 9 8" fill="none" stroke="#DB2777" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="18" y="82">HR</text>
+      <text x="18" y="102" font-size="13" font-weight="500" fill="#64748B">Kadrlar</text>
+      <text x="18" y="122" font-size="11" font-weight="500" fill="#94A3B8">contracts · orders · leave</text>
+    </g>
+    <g transform="translate(270 254)">
+      <rect width="208" height="136" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="18" y="18" width="36" height="36" rx="10" fill="#FFEDD5"/>
+      <path d="M24 46h24M28 46V32l8-6 8 6v14M34 46v-7h4v7" fill="none" stroke="#EA580C" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+      <text x="18" y="82">Construction</text>
+      <text x="18" y="102" font-size="13" font-weight="500" fill="#64748B">Qurilish</text>
+      <text x="18" y="122" font-size="11" font-weight="500" fill="#94A3B8">permits · cost estimates</text>
+    </g>
+    <g transform="translate(500 254)">
+      <rect width="208" height="136" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="18" y="18" width="36" height="36" rx="10" fill="#CCFBF1"/>
+      <path d="M23 30h16v12H23zM39 34h6l4 4v4h-10" fill="none" stroke="#0D9488" stroke-width="2.3" stroke-linejoin="round"/>
+      <circle cx="28" cy="44" r="2.5" fill="#0D9488"/><circle cx="44" cy="44" r="2.5" fill="#0D9488"/>
+      <text x="18" y="82">Logistics &amp; Trade</text>
+      <text x="18" y="102" font-size="13" font-weight="500" fill="#64748B">Logistika</text>
+      <text x="18" y="122" font-size="11" font-weight="500" fill="#94A3B8">waybill · customs · CMR</text>
+    </g>
+    <g transform="translate(730 254)">
+      <rect width="208" height="136" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="18" y="18" width="36" height="36" rx="10" fill="#E0E7FF"/>
+      <path d="M36 24l10 4v7c0 6-4 10-10 12-6-2-10-6-10-12v-7z" fill="none" stroke="#4F46E5" stroke-width="2.4" stroke-linejoin="round"/>
+      <text x="18" y="82">Insurance</text>
+      <text x="18" y="102" font-size="13" font-weight="500" fill="#64748B">Sug'urta</text>
+      <text x="18" y="122" font-size="11" font-weight="500" fill="#94A3B8">policies · claims</text>
+    </g>
+    <g transform="translate(960 254)">
+      <rect width="200" height="136" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="18" y="18" width="36" height="36" rx="10" fill="#ECFCCB"/>
+      <path d="M36 48V32M36 36c0-6 4-9 10-9 0 6-4 9-10 9zM36 40c0-5-3-8-9-8 0 5 3 8 9 8z" fill="none" stroke="#65A30D" stroke-width="2.3" stroke-linejoin="round"/>
+      <text x="18" y="82">Agriculture</text>
+      <text x="18" y="102" font-size="13" font-weight="500" fill="#64748B">Qishloq xo'jaligi</text>
+      <text x="18" y="122" font-size="11" font-weight="500" fill="#94A3B8">land lease · harvest</text>
+    </g>
+  </g>
+</svg>

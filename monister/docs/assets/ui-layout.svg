@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#6366F1"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="680" rx="20" fill="#E2E8F0"/>
+  <!-- window -->
+  <rect x="30" y="30" width="1140" height="620" rx="14" fill="#0F172A"/>
+  <rect x="30" y="30" width="1140" height="40" rx="14" fill="#1E293B"/>
+  <rect x="30" y="56" width="1140" height="14" fill="#1E293B"/>
+  <circle cx="56" cy="50" r="6" fill="#F87171"/><circle cx="76" cy="50" r="6" fill="#FBBF24"/><circle cx="96" cy="50" r="6" fill="#34D399"/>
+  <rect x="440" y="40" width="320" height="20" rx="10" fill="#0F172A"/>
+  <text x="600" y="54" font-size="11" fill="#94A3B8" text-anchor="middle">localhost:5173 — Monister</text>
+
+  <!-- sidebar -->
+  <rect x="30" y="70" width="64" height="580" fill="#111827"/>
+  <rect x="46" y="86" width="32" height="32" rx="9" fill="#6366F1"/>
+  <path d="M54 110V94l8 7 8-7v16" fill="none" stroke="#0F172A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#334155"><rect x="50" y="142" width="24" height="24" rx="6"/><rect x="50" y="178" width="24" height="24" rx="6"/><rect x="50" y="214" width="24" height="24" rx="6"/><rect x="50" y="250" width="24" height="24" rx="6"/></g>
+  <rect x="50" y="142" width="24" height="24" rx="6" fill="#4F46E5"/>
+
+  <!-- chat zone -->
+  <rect x="104" y="80" width="330" height="420" rx="10" fill="#1E293B"/>
+  <text x="120" y="106" font-size="12" font-weight="700" fill="#A5B4FC" letter-spacing="1">CHAT</text>
+  <rect x="200" y="122" width="220" height="48" rx="10" fill="#4F46E5"/>
+  <text x="214" y="142" font-size="12" fill="#E0E7FF">Clean this Excel and build a</text>
+  <text x="214" y="159" font-size="12" fill="#E0E7FF">cost breakdown chart</text>
+  <rect x="118" y="182" width="250" height="68" rx="10" fill="#334155"/>
+  <text x="132" y="203" font-size="12" fill="#E2E8F0">Parsed 2 sheets, 418 rows.</text>
+  <text x="132" y="221" font-size="12" fill="#E2E8F0">Removed 23 duplicates, filled</text>
+  <text x="132" y="239" font-size="12" fill="#E2E8F0">nulls. Building chart…</text>
+  <rect x="118" y="262" width="220" height="30" rx="8" fill="#0F172A" stroke="#475569"/>
+  <circle cx="134" cy="277" r="5" fill="#34D399"/>
+  <text x="146" y="281" font-size="11.5" fill="#94A3B8">execute_code  ✓ 1.4s</text>
+  <!-- HITL -->
+  <rect x="118" y="306" width="300" height="100" rx="10" fill="#422006" stroke="#F59E0B"/>
+  <text x="134" y="330" font-size="12" font-weight="700" fill="#FCD34D">Approval required · write_file</text>
+  <text x="134" y="350" font-size="11.5" fill="#FDE68A">uploads/2caea998_cleaned.xlsx</text>
+  <rect x="134" y="366" width="84" height="28" rx="7" fill="#16A34A"/>
+  <text x="176" y="384" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Approve</text>
+  <rect x="228" y="366" width="84" height="28" rx="7" fill="#334155"/>
+  <text x="270" y="384" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">Reject</text>
+  <rect x="118" y="450" width="302" height="38" rx="10" fill="#0F172A" stroke="#475569"/>
+  <text x="134" y="474" font-size="12" fill="#64748B">/clean  Ask Monister…</text>
+
+  <!-- pipeline zone -->
+  <rect x="444" y="80" width="380" height="420" rx="10" fill="#1E293B"/>
+  <text x="460" y="106" font-size="12" font-weight="700" fill="#A5B4FC" letter-spacing="1">PIPELINE</text>
+  <g font-size="12" font-weight="600" text-anchor="middle">
+    <rect x="564" y="130" width="140" height="40" rx="10" fill="#312E81" stroke="#818CF8"/>
+    <text x="634" y="155" fill="#E0E7FF">Upload · .xlsx</text>
+    <rect x="564" y="210" width="140" height="40" rx="10" fill="#134E4A" stroke="#2DD4BF"/>
+    <text x="634" y="235" fill="#CCFBF1">parse_excel</text>
+    <rect x="564" y="290" width="140" height="40" rx="10" fill="#134E4A" stroke="#2DD4BF"/>
+    <text x="634" y="315" fill="#CCFBF1">clean_data</text>
+    <rect x="474" y="380" width="140" height="40" rx="10" fill="#134E4A" stroke="#2DD4BF"/>
+    <text x="544" y="405" fill="#CCFBF1">execute_code</text>
+    <rect x="654" y="380" width="140" height="40" rx="10" fill="#422006" stroke="#F59E0B"/>
+    <text x="724" y="405" fill="#FDE68A">write_file · HITL</text>
+  </g>
+  <g stroke="#6366F1" stroke-width="2" fill="none">
+    <path d="M634 170v36" marker-end="url(#m)"/>
+    <path d="M634 250v36" marker-end="url(#m)"/>
+    <path d="M634 330v20h-90v26" marker-end="url(#m)"/>
+    <path d="M634 350h90v26" marker-end="url(#m)"/>
+  </g>
+
+  <!-- preview zone -->
+  <rect x="834" y="80" width="326" height="420" rx="10" fill="#1E293B"/>
+  <text x="850" y="106" font-size="12" font-weight="700" fill="#A5B4FC" letter-spacing="1">PREVIEW</text>
+  <rect x="850" y="120" width="294" height="190" rx="8" fill="#0F172A"/>
+  <text x="866" y="144" font-size="12" font-weight="600" fill="#E2E8F0">cost_breakdown.png</text>
+  <g>
+    <rect x="876" y="236" width="30" height="56" rx="3" fill="#818CF8"/>
+    <rect x="918" y="196" width="30" height="96" rx="3" fill="#A5B4FC"/>
+    <rect x="960" y="168" width="30" height="124" rx="3" fill="#2DD4BF"/>
+    <rect x="1002" y="216" width="30" height="76" rx="3" fill="#5EEAD4"/>
+    <rect x="1044" y="250" width="30" height="42" rx="3" fill="#F59E0B"/>
+    <rect x="1086" y="262" width="30" height="30" rx="3" fill="#FBBF24"/>
+  </g>
+  <rect x="850" y="322" width="294" height="164" rx="8" fill="#0F172A"/>
+  <text x="866" y="346" font-size="12" font-weight="600" fill="#E2E8F0">cleaned.xlsx</text>
+  <g font-size="11" fill="#94A3B8">
+    <rect x="866" y="356" width="262" height="22" fill="#1E293B"/>
+    <text x="874" y="371" fill="#CBD5E1" font-weight="700">Section</text><text x="990" y="371" fill="#CBD5E1" font-weight="700">Item</text><text x="1080" y="371" fill="#CBD5E1" font-weight="700">Cost</text>
+    <text x="874" y="396">Foundation</text><text x="990" y="396">Concrete</text><text x="1080" y="396">48 200</text>
+    <text x="874" y="418">Walls</text><text x="990" y="418">Brick</text><text x="1080" y="418">31 750</text>
+    <text x="874" y="440">Roof</text><text x="990" y="440">Steel</text><text x="1080" y="440">22 900</text>
+    <text x="874" y="462">Finishing</text><text x="990" y="462">Paint</text><text x="1080" y="462">9 400</text>
+  </g>
+
+  <!-- logs zone -->
+  <rect x="104" y="510" width="1056" height="130" rx="10" fill="#020617"/>
+  <text x="120" y="536" font-size="12" font-weight="700" fill="#A5B4FC" letter-spacing="1">LOGS</text>
+  <g font-family="'JetBrains Mono', Consolas, monospace" font-size="12">
+    <text x="120" y="562" fill="#64748B">12:04:11  <tspan fill="#2DD4BF">tool_start</tspan>  <tspan fill="#CBD5E1">parse_excel(file_path="uploads/2caea998.xlsx")</tspan></text>
+    <text x="120" y="584" fill="#64748B">12:04:12  <tspan fill="#34D399">tool_end  </tspan>  <tspan fill="#CBD5E1">418 rows × 7 cols</tspan></text>
+    <text x="120" y="606" fill="#64748B">12:04:14  <tspan fill="#FBBF24">hitl      </tspan>  <tspan fill="#CBD5E1">waiting for approval: write_file</tspan></text>
+    <text x="120" y="628" fill="#64748B">12:04:19  <tspan fill="#818CF8">file_ready</tspan>  <tspan fill="#CBD5E1">uploads/2caea998_cost_breakdown.png</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Xizmat Ko'rsatish Shartnomasi</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            max-width: 800px;
+            margin: 40px auto;
+            line-height: 1.6;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .parties {
+            margin-bottom: 30px;
+        }
+
+        .article {
+            margin-bottom: 20px;
+        }
+
+        .article h3 {
+            margin-bottom: 10px;
+        }
+
+        .signatures {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .signature-block {
+            width: 45%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h2>XIZMAT KO'RSATISH SHARTNOMASI</h2>
+        <p>№ {{shartnoma_raqami}}</p>
+        <p>{{shartnoma_sanasi}}</p>
+    </div>
+
+    <div class="parties">
+        <p>
+            <strong>{{buyurtmachi_tashkilot}}</strong> (keyingi o'rinlarda "Buyurtmachi" deb yuritiladi),
+            {{buyurtmachi_lavozim}} {{buyurtmachi_ismi}} shaxsida bir tomondan,
+        </p>
+        <p>
+            va <strong>{{ijrochi_tashkilot}}</strong> (keyingi o'rinlarda "Ijrochi" deb yuritiladi),
+            {{ijrochi_lavozim}} {{ijrochi_ismi}} shaxsida ikkinchi tomondan,
+            quyidagi shartnomani tuzdilar:
+        </p>
+    </div>
+
+    <div class="article">
+        <h3>1. SHARTNOMA PREDMETI</h3>
+        <p>1.1. Ijrochi Buyurtmachiga quyidagi xizmatlarni ko'rsatishni o'z zimmasiga oladi:</p>
+        <p>{{xizmat_turi}}</p>
+        <p>1.2. Xizmat ko'rsatish muddati: {{muddat}}</p>
+    </div>
+
+    <div class="article">
+        <h3>2. SHARTNOMA SUMMASI VA TO'LOV TARTIBI</h3>
+        <p>2.1. Shartnoma summasi: {{summa}} so'm</p>
+        <p>2.2. To'lov tartibi: {{tolov_tartibi}}</p>
+    </div>
+
+    <div class="article">
+        <h3>3. TOMONLARNING HUQUQ VA MAJBURIYATLARI</h3>
+        <p>3.1. Ijrochi o'z zimmasiga olgan ishlarni sifatli va o'z vaqtida bajarishga majbur.</p>
+        <p>3.2. Buyurtmachi xizmat uchun to'lovni o'z vaqtida amalga oshirishga majbur.</p>
+    </div>
+
+    <div class="article">
+        <h3>4. YAKUNIY QOIDALAR</h3>
+        <p>4.1. Shartnoma ikki nusxada tuzildi va har ikkala tomonlar uchun bir xil yuridik kuchga ega.</p>
+        <p>4.2. Shartnoma imzolangan kundan boshlab kuchga kiradi.</p>
+    </div>
+
+    <div class="signatures">
+        <div class="signature-block">
+            <h4>BUYURTMACHI:</h4>
+            <p>{{buyurtmachi_tashkilot}}</p>
+            <p>Manzil: {{buyurtmachi_manzil}}</p>
+            <p>STIR: {{buyurtmachi_stir}}</p>
+            <br>
+            <p>{{buyurtmachi_lavozim}}</p>
+            <p>_____________ {{buyurtmachi_ismi}}</p>
+            <p>M.O'.</p>
+        </div>
+        <div class="signature-block">
+            <h4>IJROCHI:</h4>
+            <p>{{ijrochi_tashkilot}}</p>
+            <p>Manzil: {{ijrochi_manzil}}</p>
+            <p>STIR: {{ijrochi_stir}}</p>
+            <br>
+            <p>{{ijrochi_lavozim}}</p>
+            <p>_____________ {{ijrochi_ismi}}</p>
+            <p>M.O'.</p>
+        </div>
+    </div>
+</body>
+
+</html>
